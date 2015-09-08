@@ -1,8 +1,11 @@
+Before starting, go to https://dev.twitter.com/oauth/overview and sign up to get an access key and token
+
 Step 1 $touch .gitignore fill with: keys.rb
 
 Step 2 $touch keys.rb
   in keys.rb file
-	  ```
+
+```
 		def consumer_key
 		  OAuth::Consumer.new(
 		    "consumer key chars",
@@ -13,6 +16,7 @@ Step 2 $touch keys.rb
 		  "access token chars",
 		  "secret access token chars")
 		end
-		 ```
+```
+
 Step 3 $ruby server.rb
 Step 4 visit localhost4567/
